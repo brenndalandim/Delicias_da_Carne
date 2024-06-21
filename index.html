@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Delícias da Carne</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/b46cc840ef.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+  <!---------------- inicio Header ------------------------>
+  <header>
+    <div id="faixa_topo">
+      <p>Não perca a chance, descontos incríveis!</p>
+    </div>
+    <div id="logo_busca">
+      <img src="./assets/img/Logo horizontal Delicias da Carne.png" alt="">
+      <div id="busca">
+        <input type="text" placeholder="Buscar produto">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <a class="animate__animated animate__heartBeat slower" href=""><i class="fa-solid fa-basket-shopping"></i></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li>Aves</li>
+          <li>Bovinos</li>
+          <li>Churrasco</li>
+          <li>Cortes Exóticos</li>
+          <li>Linguiças</li>
+          <li>Pescados</li>
+          <li>Suínos</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!---------------- Fim Header ------------------------>
+  <!---------------- Inicio Carrossel ------------------>
+  <div id="carrossel">
+    <img id = "img_carrossel" src="./assets/img/carne_banner1.jpg">
+    <div>
+      <button id="btn_esq" class="btn_carrossel">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button id="btn_dir" class="btn_carrossel">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
+  <!---------------- Fim Carrossel ---------------------->
+  <!---------------- Inicio Mini Banner ------------------>
+  <div id="mini_banner">
+    <div class="item_mini_banner">
+      <i class="fa-solid fa-truck"></i>
+      <p>Entrega em 2 horas</p>
+    </div>
+    <p>|</p>
+    <div class="item_mini_banner">
+      <i class="fa-solid fa-hand-holding-dollar"></i>
+      <p>10% de desconto no PIX</p>
+    </div>
+    <p>|</p>
+    <div class="item_mini_banner">
+      <i class="fa-solid fa-lock"></i>
+      <p>Loja Segura</p>
+    </div>
+    <p>|</p>
+    <div class="item_mini_banner">
+      <i class="fa-regular fa-credit-card"></i>
+      <p>Parcele em até 12x</p>
+    </div>
+  </div>
+  <!---------------- Fim Mini Banner ------------------>
+  <!---------------- Inicio Produtos ------------------>
+  <div id="container_produtos">
+    <p class="titulo_container">As Mais Pedidas <a href=""><span>Ver Todos</span></a></p>
+    <hr class="linhaCorte">
+    <div id="caixa_produtos">
+        <div class="produto">
+          <div>
+            <img src="./assets/img/picanha.png">
+          </div>
+          <p class = "titulo">Picanha</p>
+          <p class = "valor">R$59,90<span>/kg</span></p>
+          <a href=""><button class="comprar">COMPRAR</button></a>
+        </div>
+        <div class="produto">
+          <div>
+            <img src="./assets/img/peitoDeFrango.png">
+          </div>
+          <p class = "titulo">Peito de Frango</p>
+          <p class = "valor">R$15,90<span>/kg</span></p>
+          <a href=""><button class="comprar">COMPRAR</button></a>
+        </div>
+        <div class="produto">
+          <div>
+            <img src="./assets/img/bifeDeLomboSuino.png">
+          </div>
+          <p class = "titulo">Bife de Lombo Suíno</p>
+          <p class = "valor">R$19,99<span>/kg</span></p>
+          <a href=""><button class="comprar">COMPRAR</button></a>
+        </div>
+        <div class="produto">
+          <div>
+            <img src="./assets/img/fileTilapia.png">
+          </div>
+          <p class = "titulo">Filé de Tilápia</p>
+          <p class = "valor">R$49,90<span>/kg</span></p>
+          <a href=""><button class="comprar">COMPRAR</button></a>
+        </div>
+        <div class="produto">
+          <div>
+            <img src="./assets/img/fraldinha.png">
+          </div>
+          <p class = "titulo">Fraldinha</p>
+          <p class = "valor">R$57,90<span>/kg</span></p>
+          <a href=""><button class="comprar">COMPRAR</button></a>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+  <!---------------- Fim Produtos ------------------>
+  <!---------------- Inicio Funcionamento -------------->
+  <div id="container_local">
+    <p class="titulo_container">Venha nos Visitar</p>
+    <hr class="linhaCorte">
+    <div id="container_local_dados">
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1714873568892!6m8!1m7!1sW9DT4kJQAyV1iBJomqzwbA!2m2!1d-22.95471019234637!2d-43.19372147794848!3f333.6464417743331!4f-5.6377437361560965!5f2.6793314139706697" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div id="horario_funcionamento">
+        <hr>
+        <h3>Funcionamento</h3>
+        <hr>
+        <p>Seg a Sex - 07:00 às 19:00</p>
+        <p>Sábado - 07:00 às 15:00</p>
+        <p>Rua Voluntários da Pátria, 340 - Botafogo</p>
+      </div>
+    </div>
+  </div>
+  <!---------------- Fim Funcionamento ---------------->
+  <!---------------- Inicio PreFooter ------------->
+  <div id="pre_footer">
+    <div id="pf_sobre">
+      <img src="./assets/img/Logo horizontal Delicias da Carne.png" alt="">
+      <p>Há quarenta anos comercializando produtos de qualidade.<br>Cortes Uruguaios e Argentinos, filé de peixes, haddock, escocês, vieiras importadadas e até tentáculos.<br>Nós acreditamos que comer é uma das grandes maravilhas da vida!</p>
+    </div>
+    <div id="pf_contato">
+      <h3>Atendimento</h3>
+      <p>(21) 2527-7125</p>
+      <p>(21) 9721-30412</p>
+      <p>(21) 99908-4435</p>
+      <a href="mailto:deliciasdacarne@gmail.com">deliciasdacarne@gmail.com</a>
+    </div>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="">Quem Somos</a></li>
+      <li><a href="">Política de Cookies</a></li>
+      <li><a href="">Política de Privacidade</a></li>
+    </ul>
+  </div>
+  <!---------------- Fim PreFooter --------------->
+  <!---------------- Inicio Btn Whatsapp --------->
+  <div id="wpp_flutuante">
+    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <!-------------- Fim Btn Whatsapp -------------->
+  <!---------------- Inicio Footer --------------->
+  <footer>
+    <p>Copyright © Brennda Landim | Feito com <i class="fa-solid fa-heart"></i></p>
+  </footer>
+  <!---------------- Fim Footer --------------->
+  <script src="script.js"></script>
+</body>
+
+</html>
